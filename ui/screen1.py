@@ -62,5 +62,4 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Dialog"))
         self.playNowButton.setText(_translate("MainWindow", "Play Now"))
-        self.helpButton.setText(_translate("MainWindow", "HELP"))
-# import imgs_rc
+        self.helpButton.setText(_translate("MainWindow", "GUIDE"))

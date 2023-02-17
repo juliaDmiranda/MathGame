@@ -16,70 +16,33 @@ class Ui_Dialog(object):
         Dialog.setObjectName("Dialog")
         Dialog.resize(599, 440)
         Dialog.setStyleSheet("background-color: #010102")
-        self.gridLayout = QtWidgets.QGridLayout(Dialog)
-        self.gridLayout.setObjectName("gridLayout")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.gridLayout.addLayout(self.verticalLayout_2, 0, 4, 1, 1)
         self.scoresLabel = QtWidgets.QLabel(Dialog)
+        self.scoresLabel.setGeometry(QtCore.QRect(11, 20, 61, 26))
         self.scoresLabel.setMaximumSize(QtCore.QSize(99, 26))
-        self.scoresLabel.setStyleSheet("color: rgb(170, 85, 255);\n"
-"font: 8pt \"Wide Latin\";")
+        font = QtGui.QFont()
+        font.setFamily("Tw Cen MT")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.scoresLabel.setFont(font)
+        self.scoresLabel.setStyleSheet("color:  #c123de;\n"
+"font:  \"Wide Latin\";")
         self.scoresLabel.setScaledContents(False)
-        self.scoresLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.scoresLabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.scoresLabel.setOpenExternalLinks(False)
         self.scoresLabel.setObjectName("scoresLabel")
-        self.gridLayout.addWidget(self.scoresLabel, 0, 0, 1, 1)
-        self.answerLabel = QtWidgets.QLabel(Dialog)
-        self.answerLabel.setObjectName("answerLabel")
-        self.gridLayout.addWidget(self.answerLabel, 5, 2, 1, 3)
-        self.verticalLayout = QtWidgets.QVBoxLayout()
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.gridLayout.addLayout(self.verticalLayout, 0, 5, 1, 1)
         self.scoreLabel = QtWidgets.QLabel(Dialog)
+        self.scoreLabel.setGeometry(QtCore.QRect(70, 10, 141, 44))
         self.scoreLabel.setMaximumSize(QtCore.QSize(16777215, 135))
         self.scoreLabel.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"color: rgb(170, 85, 255);\n"
+"color:  #c123de;\n"
 "font: 20pt ;\n"
 "border-radius:10px;\n"
 "padding:2px 2px;")
         self.scoreLabel.setObjectName("scoreLabel")
-        self.gridLayout.addWidget(self.scoreLabel, 0, 1, 1, 2)
-        self.verticalLayout_8 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_8.setObjectName("verticalLayout_8")
-        self.checkAnswerButton = QtWidgets.QPushButton(Dialog)
-        self.checkAnswerButton.setStyleSheet("background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);\n"
-"    background-color:#ffffff;\n"
-"    border-radius:10px;\n"
-"    display:inline-block;\n"
-"    cursor:pointer;\n"
-"    color:#c123de;\n"
-"    font-family:Verdana;\n"
-"    font-size:20px;\n"
-"    padding:16px 31px;\n"
-"    text-decoration:none;\n"
-"    text-shadow:0px 1px 11px #9b14b3;")
-        self.checkAnswerButton.setObjectName("checkAnswerButton")
-        self.verticalLayout_8.addWidget(self.checkAnswerButton)
-        self.gridLayout.addLayout(self.verticalLayout_8, 6, 3, 1, 1)
-        self.verticalLayout_7 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.gridLayout.addLayout(self.verticalLayout_7, 6, 4, 1, 1)
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_5.setObjectName("verticalLayout_5")
-        self.gridLayout.addLayout(self.verticalLayout_5, 1, 1, 1, 1)
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.gridLayout.addLayout(self.verticalLayout_3, 0, 3, 1, 1)
-        self.verticalLayout_4 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_4.setObjectName("verticalLayout_4")
-        self.gridLayout.addLayout(self.verticalLayout_4, 6, 2, 1, 1)
-        self.verticalLayout_6 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.gridLayout.addLayout(self.verticalLayout_6, 3, 1, 1, 1)
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
         self.menuButton = QtWidgets.QPushButton(Dialog)
+        self.menuButton.setGeometry(QtCore.QRect(522, 14, 66, 38))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(-1)
@@ -98,18 +61,50 @@ class Ui_Dialog(object):
 "    text-decoration:none;\n"
 "    text-shadow:0px 1px 11px #9b14b3;")
         self.menuButton.setObjectName("menuButton")
-        self.horizontalLayout.addWidget(self.menuButton)
-        self.gridLayout.addLayout(self.horizontalLayout, 0, 6, 1, 1)
-        self.questionLabel = QtWidgets.QLabel(Dialog)
+        self.verticalLayoutWidget_3 = QtWidgets.QWidget(Dialog)
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(120, 140, 367, 192))
+        self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
+        self.gridLayout = QtWidgets.QGridLayout(self.verticalLayoutWidget_3)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.lineEdit = QtWidgets.QLineEdit(self.verticalLayoutWidget_3)
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        self.lineEdit.setFont(font)
+        self.lineEdit.setStyleSheet("background-color: #c123de;\n"
+"border-radius:10px;\n"
+"padding:2px 2px;\n"
+"color: white;")
+        self.lineEdit.setInputMethodHints(QtCore.Qt.ImhNone)
+        self.lineEdit.setText("")
+        self.lineEdit.setObjectName("lineEdit")
+        self.gridLayout.addWidget(self.lineEdit, 1, 0, 1, 1)
+        self.verticalLayout_8 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_8.setObjectName("verticalLayout_8")
+        self.checkAnswerButton = QtWidgets.QPushButton(self.verticalLayoutWidget_3)
+        self.checkAnswerButton.setStyleSheet("background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);\n"
+"    background-color:#ffffff;\n"
+"    border-radius:10px;\n"
+"    display:inline-block;\n"
+"    cursor:pointer;\n"
+"    color:#c123de;\n"
+"    font-family:Verdana;\n"
+"    font-size:20px;\n"
+"    padding:16px 31px;\n"
+"    text-decoration:none;\n"
+"    text-shadow:0px 1px 11px #9b14b3;")
+        self.checkAnswerButton.setObjectName("checkAnswerButton")
+        self.verticalLayout_8.addWidget(self.checkAnswerButton)
+        self.gridLayout.addLayout(self.verticalLayout_8, 2, 0, 1, 1)
+        self.questionLabel = QtWidgets.QLabel(self.verticalLayoutWidget_3)
         self.questionLabel.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.questionLabel.setSizeIncrement(QtCore.QSize(0, 0))
         self.questionLabel.setStyleSheet("color: white;\n"
 "font: 30pt \"MS Shell Dlg 2\";")
         self.questionLabel.setLineWidth(1)
-        self.questionLabel.setText("")
         self.questionLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.questionLabel.setObjectName("questionLabel")
-        self.gridLayout.addWidget(self.questionLabel, 2, 3, 1, 1)
+        self.gridLayout.addWidget(self.questionLabel, 0, 0, 1, 1)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -118,8 +113,7 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.scoresLabel.setText(_translate("Dialog", "SCORES"))
-        self.answerLabel.setText(_translate("Dialog", "TextLabel"))
         self.scoreLabel.setText(_translate("Dialog", "0"))
-        self.checkAnswerButton.setText(_translate("Dialog", "CHECK"))
         self.menuButton.setText(_translate("Dialog", "MENU"))
-# import imgs_rc
+        self.checkAnswerButton.setText(_translate("Dialog", "CHECK"))
+        self.questionLabel.setText(_translate("Dialog", "QUESTION"))

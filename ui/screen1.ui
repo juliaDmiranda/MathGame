@@ -28,6 +28,9 @@
    <property name="text">
     <string/>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
@@ -75,7 +78,7 @@
 	text-shadow:0px 1px 11px #9b14b3;</string>
       </property>
       <property name="text">
-       <string>HELP</string>
+       <string>GUIDE</string>
       </property>
      </widget>
     </item>

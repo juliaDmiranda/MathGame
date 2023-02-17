@@ -16,119 +16,92 @@
   <property name="styleSheet">
    <string notr="true">background-color: #010102</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="4">
-    <layout class="QVBoxLayout" name="verticalLayout_2"/>
-   </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="scoresLabel">
-     <property name="maximumSize">
-      <size>
-       <width>99</width>
-       <height>26</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(170, 85, 255);
-font: 8pt &quot;Wide Latin&quot;;</string>
-     </property>
-     <property name="text">
-      <string>SCORES</string>
-     </property>
-     <property name="scaledContents">
-      <bool>false</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="openExternalLinks">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="2" colspan="3">
-    <widget class="QLabel" name="answerLabel">
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="5">
-    <layout class="QVBoxLayout" name="verticalLayout"/>
-   </item>
-   <item row="0" column="1" colspan="2">
-    <widget class="QLabel" name="scoreLabel">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>135</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(170, 85, 255);
+  <widget class="QLabel" name="scoresLabel">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>20</y>
+     <width>61</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>99</width>
+     <height>26</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tw Cen MT</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:  #c123de;
+font:  &quot;Wide Latin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>SCORES</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="scoreLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>141</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>135</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+color:  #c123de;
 font: 20pt ;
 border-radius:10px;
 padding:2px 2px;</string>
-     </property>
-     <property name="text">
-      <string>0</string>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="3">
-    <layout class="QVBoxLayout" name="verticalLayout_8">
-     <item>
-      <widget class="QPushButton" name="checkAnswerButton">
-       <property name="styleSheet">
-        <string notr="true">background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
-	background-color:#ffffff;
-	border-radius:10px;
-	display:inline-block;
-	cursor:pointer;
-	color:#c123de;
-	font-family:Verdana;
-	font-size:20px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 11px #9b14b3;</string>
-       </property>
-       <property name="text">
-        <string>CHECK</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="6" column="4">
-    <layout class="QVBoxLayout" name="verticalLayout_7"/>
-   </item>
-   <item row="1" column="1">
-    <layout class="QVBoxLayout" name="verticalLayout_5"/>
-   </item>
-   <item row="0" column="3">
-    <layout class="QVBoxLayout" name="verticalLayout_3"/>
-   </item>
-   <item row="6" column="2">
-    <layout class="QVBoxLayout" name="verticalLayout_4"/>
-   </item>
-   <item row="3" column="1">
-    <layout class="QVBoxLayout" name="verticalLayout_6"/>
-   </item>
-   <item row="0" column="6">
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="menuButton">
-       <property name="font">
-        <font>
-         <family>Verdana</family>
-         <pointsize>-1</pointsize>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="menuButton">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>14</y>
+     <width>66</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
 	background-color:#ffffff;
 	border-radius:10px;
 	display:inline-block;
@@ -139,44 +112,97 @@ padding:2px 2px;</string>
 	padding:10px 11px;
 	text-decoration:none;
 	text-shadow:0px 1px 11px #9b14b3;</string>
-       </property>
-       <property name="text">
-        <string>MENU</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="2" column="3">
-    <widget class="QLabel" name="questionLabel">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="sizeIncrement">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: white;
+   </property>
+   <property name="text">
+    <string>MENU</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>140</y>
+     <width>367</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #c123de;
+border-radius:10px;
+padding:2px 2px;
+color: white;</string>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <item>
+       <widget class="QPushButton" name="checkAnswerButton">
+        <property name="styleSheet">
+         <string notr="true">background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#ffffff;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#c123de;
+	font-family:Verdana;
+	font-size:20px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 11px #9b14b3;</string>
+        </property>
+        <property name="text">
+         <string>CHECK</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="questionLabel">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
 font: 30pt &quot;MS Shell Dlg 2&quot;;</string>
-     </property>
-     <property name="lineWidth">
-      <number>1</number>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-  </layout>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="text">
+       <string>QUESTION</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources>
   <include location="../imgs/imgs.qrc"/>

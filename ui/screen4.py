@@ -16,30 +16,36 @@ class Ui_Dialog(object):
         Dialog.setObjectName("Dialog")
         Dialog.resize(599, 440)
         Dialog.setStyleSheet("background-color: #010102")
-        self.gridLayout = QtWidgets.QGridLayout(Dialog)
-        self.gridLayout.setObjectName("gridLayout")
-        self.gridLayout_2 = QtWidgets.QGridLayout()
-        self.gridLayout_2.setObjectName("gridLayout_2")
-        self.scoresLabel = QtWidgets.QLabel(Dialog)
-        self.scoresLabel.setMaximumSize(QtCore.QSize(99, 26))
-        self.scoresLabel.setStyleSheet("color: rgb(170, 85, 255);\n"
+        self.helpLabel = QtWidgets.QLabel(Dialog)
+        self.helpLabel.setGeometry(QtCore.QRect(115, 11, 371, 56))
+        self.helpLabel.setMinimumSize(QtCore.QSize(300, 0))
+        self.helpLabel.setMaximumSize(QtCore.QSize(700, 56))
+        font = QtGui.QFont()
+        font.setFamily("Wide Latin")
+        font.setPointSize(30)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.helpLabel.setFont(font)
+        self.helpLabel.setStyleSheet("color: #c123de;\n"
 "font: 30pt \"Wide Latin\";")
-        self.scoresLabel.setScaledContents(False)
-        self.scoresLabel.setAlignment(QtCore.Qt.AlignCenter)
-        self.scoresLabel.setOpenExternalLinks(False)
-        self.scoresLabel.setObjectName("scoresLabel")
-        self.gridLayout_2.addWidget(self.scoresLabel, 0, 0, 1, 1)
-        self.gridLayout.addLayout(self.gridLayout_2, 0, 2, 1, 3)
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.helpLabel.setLineWidth(0)
+        self.helpLabel.setMidLineWidth(0)
+        self.helpLabel.setScaledContents(False)
+        self.helpLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.helpLabel.setOpenExternalLinks(False)
+        self.helpLabel.setObjectName("helpLabel")
         self.label = QtWidgets.QLabel(Dialog)
-        self.label.setStyleSheet("color: rgb(255, 255, 255);")
+        self.label.setGeometry(QtCore.QRect(11, 120, 577, 280))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label.setFont(font)
+        self.label.setStyleSheet("color: rgb(255, 255, 255);\n"
+"")
+        self.label.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.label.setObjectName("label")
-        self.verticalLayout_3.addWidget(self.label)
-        self.gridLayout.addLayout(self.verticalLayout_3, 1, 1, 1, 5)
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.menuButton = QtWidgets.QPushButton(Dialog)
+        self.menuButton.setGeometry(QtCore.QRect(11, 20, 61, 38))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(-1)
@@ -58,11 +64,6 @@ class Ui_Dialog(object):
 "    text-decoration:none;\n"
 "    text-shadow:0px 1px 11px #9b14b3;")
         self.menuButton.setObjectName("menuButton")
-        self.verticalLayout_2.addWidget(self.menuButton)
-        self.gridLayout.addLayout(self.verticalLayout_2, 0, 1, 1, 1)
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.gridLayout.addLayout(self.horizontalLayout, 0, 5, 1, 1)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -70,7 +71,16 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.scoresLabel.setText(_translate("Dialog", "HELP"))
-        self.label.setText(_translate("Dialog", "<html><head/><body><p>* instruction 1<br/>* instruction 2</p></body></html>"))
+        self.helpLabel.setText(_translate("Dialog", "GUIDE"))
+        self.label.setText(_translate("Dialog", "<html>\n"
+"  <head></head>\n"
+"  <body>\n"
+"    <ul>\n"
+"      <li>1 - The score you have earned so far will be<br>displayed in the label located at the top left cornerr</li><br>\n"
+"      <li>2 - Ready for a challenge? Solve the math problem<br> in the purple box using only numbers. Show us what you\'ve got!</li><br>\n"
+"      <li>3 - Let\'s see if you\'re right! Hit the \"CHECK\" button<br> and find out! </li>\n"
+"    </ul>\n"
+"  </body>\n"
+"</html>"))
         self.menuButton.setText(_translate("Dialog", "<"))
-# import imgs_rc
+import imgs_rc
