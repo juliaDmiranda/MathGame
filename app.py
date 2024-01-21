@@ -15,7 +15,7 @@ class MainWindow(QDialog):
         super(MainWindow, self).__init__()
         loadUi("ui/screen1.ui", self)
         self.setWindowTitle("MATH GAME")
-        self.bgLabel.setPixmap(QPixmap('imgs/bg/main.png'))
+        self.bgLabel.setPixmap(QPixmap('images/bg/main.png'))
         self.bgLabel.setScaledContents(True) 
 
         self.playNowButton.clicked.connect(self.gotoLevels)
@@ -44,7 +44,7 @@ class LevelsWindow(QDialog):
         super(LevelsWindow, self).__init__()
         loadUi("ui/screen2.ui", self)
         self.setWindowTitle("MATH GAME")
-        self.bgLabel.setPixmap(QPixmap('imgs/bg/main.png'))
+        self.bgLabel.setPixmap(QPixmap('images/bg/main.png'))
         self.bgLabel.setScaledContents(True)
 
         self.menuButton.clicked.connect(self.gotoMain)
